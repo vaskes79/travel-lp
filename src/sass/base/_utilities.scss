@@ -1,0 +1,21 @@
+.u-ct { text-align: center !important; }
+
+.u-mb-small { mb: 1.5rem !important; }
+.u-mb-medium {
+    mb: 4rem !important;
+
+    @include respond(tab-port) {
+        mb: 3rem !important;
+    }
+}
+
+.u-mb-big { 
+    mb: 8rem !important;
+
+    @include respond(tab-port) {
+        mb: 5rem !important;
+    }
+}
+
+.u-mt-big { mt: 8rem !important; }
+.u-mt-huge { mt: 10rem !important; }

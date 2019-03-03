@@ -1,0 +1,46 @@
+{
+  "name": "landing-bp",
+  "version": "0.0.1",
+  "description": "boilerplate for creating static landing page",
+  "main": "index.js",
+  "author": "Vasily Guzov",
+  "license": "MIT",
+  "homepage": "https://vaskes79.github.io/landing-bp",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack.config.js",
+    "clean": "rimrav public",
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js --mode=production",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d public"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.4.9",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.15.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-cli": "^6.1.2",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.16.4",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

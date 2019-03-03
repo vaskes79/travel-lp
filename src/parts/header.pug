@@ -3,7 +3,8 @@
 
 header.header
     a.header__logo(href= header__logo.url)
-        img(src= header__img.srcset[0] alt= header__img.alt)
-    h1.heading= heading 
-        span.heading__sub= heading__sub
-    a.btn.btn--white.btn--animated(href= btn.url)= btn.text
+        img.header__logo-img(src= header__img.srcset[0] alt= header__img.alt)
+    .header__text-box 
+        h1.heading= heading 
+            span.heading__sub= heading__sub
+        a.btn.btn--white.btn--animated(href= btn.url)= btn.text

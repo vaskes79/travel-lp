@@ -1,0 +1,9 @@
+- const {header: {heading, heading__sub, btn, header__logo}} = require('../data/home.json');
+- const {header__img} = header__logo;
+
+header.header
+    a.header__logo(href= header__logo.url)
+        img(src= header__img.srcset[0] alt= header__img.alt)
+    h1.heading= heading 
+        span.heading__sub= heading__sub
+    a.btn.btn--white.btn--animated(href= btn.url)= btn.text

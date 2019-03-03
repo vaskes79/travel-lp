@@ -1,6 +1,4 @@
 doctype html
-
-- const data = require('./data/home.json');
 html(lang='en-US')
   head
     meta(charset='utf-8')
@@ -14,6 +12,4 @@ html(lang='en-US')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.8/css/brands.css', integrity='sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh', crossorigin='anonymous')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css', integrity='sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P', crossorigin='anonymous')
   body
-    h1= data.h1 
-    p= data.p
-    img(src=require('./static/photo.jpg'), alt='test image')
+      include parts/header.pug

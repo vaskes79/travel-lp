@@ -25,10 +25,11 @@
   },
   "header": {
     "heading": "outdors",
-    "heding__sub": "is where life happens",
+    "heading__sub": "is where life happens",
     "btn": {
       "modifire": "btn--white btn--animated",
-      "text": "discovery tours"
+      "text": "discovery tours",
+      "url": "#tours"
     },
     "header__logo": {
       "url": "https://vaskes79.github.io/landing-bp/",
@@ -37,5 +38,5 @@
         "alt": "the outdors logo"
       }
     }
-  },
+  }
 }

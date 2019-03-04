@@ -35,9 +35,9 @@
       "url": "https://vaskes79.github.io/landing-bp/",
       "header__img": {
         "srcset": [
-          "./static/logo-white.png",
-          "./static/logo-green-1x.png",
-          "./static/logo-green-2x.png"
+          "../static/logo-white.png",
+          "../static/logo-green-1x.png",
+          "../static/logo-green-2x.png"
         ],
         "alt": "the outdors logo"
       }

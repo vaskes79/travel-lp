@@ -1,9 +1,10 @@
 - const {header: {heading, heading__sub, btn, header__logo}} = require('../data/home.json');
 - const {header__img} = header__logo;
+- const logo = require('../static/logo-white.png')
 
 header.header
     a.header__logo(href= header__logo.url)
-        img.header__logo-img(src= header__img.srcset[0] alt= header__img.alt)
+        img.header__logo-img(src= logo alt= header__img.alt)
     .header__text-box 
         h1.heading= heading 
             span.heading__sub= heading__sub

@@ -1,0 +1,21 @@
+- const {about: {heading, text, btn}} = require('../data/home.json');
+- const photo1 = require('../static/nat-1.jpg');
+- const photo2 = require('../static/nat-2.jpg');
+- const photo3 = require('../static/nat-3.jpg');
+        
+
+section#about
+    header.u-ct.u-mb-big
+        h2.heading-2= heading
+    .row
+        .col-1-of-2
+            each item in text
+                h3.heading-3= item.heading
+                p.paragraph= item.p
+            a.btn-text(href= btn.url target="_blank")= btn.label 
+
+        .col-1-of-2
+            .composition
+                img.composition__photo.composition__photo--p1(src= photo1 alt='nat 1')
+                img.composition__photo.composition__photo--p2(src= photo2 alt='nat 2')
+                img.composition__photo.composition__photo--p3(src= photo3 alt='nat 3')

@@ -2,11 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const autoprefixer = require('autoprefixer');
-
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -14,20 +13,20 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '[contenthash:8].bundle.js'
+    filename: '[contenthash:8].bundle.js',
   },
-  devtool: isDevelopment && "source-map",
+  devtool: isDevelopment && 'source-map',
   devServer: {
     port: 3000,
+    host: '0.0.0.0',
     open: true,
-    contentBase: path.join(__dirname, "src"),
+    contentBase: path.join(__dirname, 'src'),
   },
-  optimization: isDevelopment ? {} : {
-    minimizer: [
-      new TerserPlugin({}),
-      new OptimizeCSSAssetsPlugin({})
-    ]
-  },
+  optimization: isDevelopment
+    ? {}
+    : {
+        minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
+      },
   module: {
     rules: [
       {
@@ -42,27 +41,25 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: isDevelopment,
-            }
+            },
           },
           {
             loader: 'postcss-loader',
             options: {
               autoprefixer: {
-                browser: ["last 5 versions"]
+                browser: ['last 5 versions'],
               },
               sourceMap: isDevelopment,
-              plugins: () => [
-                autoprefixer
-              ]
-            }
+              plugins: () => [autoprefixer],
+            },
           },
           {
             loader: 'sass-loader',
             options: {
               sourceMap: isDevelopment,
-            }
-          }
-        ]
+            },
+          },
+        ],
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
@@ -73,40 +70,40 @@ module.exports = {
               name: '[contenthash:8].[name].[ext]',
               outputPath: 'static/',
               useRelativePath: true,
-            }
+            },
           },
           {
             loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
                 progressive: true,
-                quality: 65
+                quality: 65,
               },
               optipng: {
                 enabled: true,
               },
               pngquant: {
                 quality: '65-90',
-                speed: 4
+                speed: 4,
               },
               gifsicle: {
                 interlaced: false,
               },
               webp: {
-                quality: 75
-              }
-            }
-          }
-        ]
-      }
-    ]
+                quality: 75,
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(['public']),
     new webpack.LoaderOptionsPlugin({
       options: {
-        handlebarsLoader: {}
-      }
+        handlebarsLoader: {},
+      },
     }),
     new MiniCssExtractPlugin({
       filename: isDevelopment ? '[name].css' : 'css/[hash:8].[name].css',
@@ -120,8 +117,8 @@ module.exports = {
         collapseWhitespace: true,
         caseSensitive: true,
         removeComments: true,
-        removeEmptyElements: true
+        removeEmptyElements: true,
       },
-    })
-  ]
+    }),
+  ],
 };

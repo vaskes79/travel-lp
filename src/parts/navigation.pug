@@ -1,0 +1,11 @@
+- const {navigation: {items}} = require('../data/home.json');
+
+.navigation
+    button.navigation__btn 
+        span.navigation__icon &nbsp;
+    nav.navigation__nav
+        ul.navigation__list
+            each item in items
+                - const {url, label} = item
+                li.navigation__item
+                    a.navigation__link(href= url)= label

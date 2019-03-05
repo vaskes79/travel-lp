@@ -14,6 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[contenthash:8].bundle.js',
+    publicPath: isDevelopment ? '/' : '/travel-lp/',
   },
   devtool: isDevelopment && 'source-map',
   devServer: {
@@ -57,6 +58,19 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sourceMap: isDevelopment,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[contenthash:8].[name].[ext]',
+              outputPath: 'static/fonts/',
+              useRelativePath: true,
             },
           },
         ],

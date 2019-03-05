@@ -3,9 +3,9 @@
 section#features
     .row
         each item in features 
-            - const iconClasses = "fearute-box icon-basic-" + item.iconName;
+            - const iconClasses = "feature-box__icon icon-basic-" + item.iconName;
             .col-1-of-4
                 .feature-box
                     i(class= iconClasses)
-                    h3.hading-3.u-mb-small= item.heading
+                    h3.heading-3.u-mb-small= item.heading
                     p.feature-box__text= item.description

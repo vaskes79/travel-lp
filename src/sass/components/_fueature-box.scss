@@ -1,0 +1,11 @@
+.feature-box {
+    background-color: rgba($c-white, .8);
+    border-radius: 3px;
+    padding: 1.6rem;
+    text-align: center;
+    
+    &__icon {
+        font-size: 6rem;
+        display: inline-block;
+    }
+}

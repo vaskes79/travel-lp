@@ -6,6 +6,7 @@
         to right bottom, 
         rgba($c-primary-light, 0.8), 
         rgba($c-primary-dark, 0.8));
+    //url(../img/hero-small.jpg);
     @supports (clip-path: polygon(0 0)) {
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }

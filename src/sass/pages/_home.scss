@@ -1,6 +1,22 @@
 // styles for index.html page
 #about {
-    background-color: $c-grey-light-1;
-    padding: 10rem 0;
-    margin-top: -10vh;
+  background-color: $c-grey-light-1;
+  padding: 20rem 0;
+  margin-top: -10vh;
+}
+
+#features {
+  transform: skewY(-7deg);
+  padding: 10rem 0;
+  margin-top: -10vh;
+  background-color: $c-primary;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($c-primary-light, 0.8),
+      rgba($c-primary-dark, 0.8)),
+    url(../static/nat-4.jpg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }

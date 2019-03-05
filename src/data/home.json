@@ -59,5 +59,27 @@
       "label": "Learn more",
       "url": "https://github.com/vaskes79"
     }
-  }
+  },
+  "features": [
+    {
+      "iconName": "world",
+      "heading": "explore the world",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+    },
+    {
+      "iconName": "compas",
+      "heading": "meet nature",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+    },
+    {
+      "iconName": "map",
+      "heading": "find your way",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+    },
+    {
+      "iconName": "heart",
+      "heading": "live a healthier life",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+    }
+  ]
 }

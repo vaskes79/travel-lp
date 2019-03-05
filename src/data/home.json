@@ -42,5 +42,22 @@
         "alt": "the outdors logo"
       }
     }
+  },
+  "about": {
+    "heading": "Exciting tours for adventurous people",
+    "text": [
+      {
+        "heading": "You're going to fall in love with nature",
+        "p": "Gastropub trust fund try-hard, messenger bag cray artisan meditation everyday carry lo-fi. Leggings messenger bag bushwick authentic hella yuccie viral live-edge man braid banh mi pork belly scenester. DIY letterpress bitters, authentic lo-fi 3 wolf moon tacos humblebrag. Occupy keffiyeh fixie subway tile viral squid. Tacos kale chips edison bulb heirloom knausgaard iPhone. Ramps tote bag enamel pin, kombucha art party VHS affogato tofu lyft hella letterpress paleo helvetica. Vice lomo hashtag aesthetic yuccie tumblr DIY waistcoat helvetica deep v gastropub typewriter hexagon marfa."
+      },
+      {
+        "heading": "Live adventures like you never have before",
+        "p": "Gastropub trust fund try-hard, messenger bag cray artisan meditation everyday carry lo-fi. Leggings messenger bag bushwick authentic hella yuccie viral live-edge man braid banh mi pork belly scenester. DIY letterpress bitters, authentic lo-fi 3 wolf moon tacos humblebrag. Occupy keffiyeh fixie subway tile viral squid. Tacos kale chips edison bulb heirloom knausgaard iPhone. Ramps tote bag enamel pin, kombucha art party"
+      }
+    ],
+    "btn": {
+      "label": "Learn more",
+      "url": "https://github.com/vaskes79"
+    }
   }
 }

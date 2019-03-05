@@ -46,3 +46,36 @@
     }
   }
 }
+
+.btn-text {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $c-primary;
+        border-bottom: 1px solid $c-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+    &::after {
+        content: '\2192';
+        transition: all .2s;
+        margin-left: .5rem;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $c-primary-dark;
+        border-bottom: 1px solid $c-primary-dark;
+        &::after {
+            margin-left: 1rem;
+        }
+    }
+    &:focus {
+        background-color: $c-grey-dark;
+    }
+
+}

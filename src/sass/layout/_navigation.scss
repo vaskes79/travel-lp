@@ -4,7 +4,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
   z-index: 100;
 
   // BACKGROUND
@@ -89,6 +88,7 @@
 
   // NAV LINK CONTAINER
   &__nav {
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -101,6 +101,7 @@
 
   // NAV ACTIVE STATE
   &--active &__nav {
+    visibility: visible;
     opacity: 1;
     width: 100%;
   }
@@ -117,7 +118,7 @@
     width: 100%;
     transition: all 0.8s $lineEasOut;
   }
-  
+
   // NAV LIST ACTIVE STATE
   &--active &__list {
     opacity: 1;

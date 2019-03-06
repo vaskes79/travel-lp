@@ -1,0 +1,24 @@
+- const {stories: {heading, items}} = require('../data/home.json'); 
+
+section#stories
+    .bg-video
+        video.bg-video__content(autoplay muted loop)
+            source(src= require('../static/video.mp4') type="video/mp4")
+            source(src= require('../static/video.webm') type="video/webm")
+            you browser is not supported tag video!
+    header.u-ct.u-mb-big
+        h2.heading-2= heading
+        
+    each story in items
+        - let {img: {url, alt}, heading, name, text} = story;
+        - let src = require(`../static/${url}`);
+        
+        .row
+            .story
+                .figure.story__shape
+                    img.story__img(src= src alt= alt)
+                    figcaption.story__caption= name
+            .story__text
+                h3.heading-3.u-mb-small= heading
+                p= text
+

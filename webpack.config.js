@@ -63,6 +63,19 @@ module.exports = {
         ],
       },
       {
+        test: /\.(mp4|webm)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[contenthash:8].[name].[ext]',
+              outputPath: 'static/video/',
+              useRelativePath: true,
+            },
+          },
+        ],
+      },
+      {
         test: /\.(woff(2)?|ttf|eot|svg)$/,
         use: [
           {

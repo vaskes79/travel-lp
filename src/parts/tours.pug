@@ -12,22 +12,22 @@ section#tours
            - let headingModifire = `card__heading-span--${i}`;
 
            .col-1-of-3
-               .card__side.card__side--front
-                   .card__picture(class= pucMoifire) &nbsp;
-                   .card__heading
-                       span.card__heading-span(class= headingModifire)= heading
-                   .card__details
-                       ul
-                           each item in details
-                               li= item
-                               
-               .card__side.card__side--back(class= cardModifire)
-                   .card__cta
-                       .card__price-box
-                           p.card__price-only= priceBox.only
-                           p.card__price-value= priceBox.value
-                       button.btn.btn-white= btn
+               .card
+                   .card__side.card__side--front
+                       .card__picture(class= pucMoifire) &nbsp;
+                       .card__heading
+                           span.card__heading-span(class= headingModifire)= heading
+                       .card__details
+                           ul
+                               each item in details
+                                   li= item
+                                   
+                   .card__side.card__side--back(class= cardModifire)
+                       .card__cta
+                           .card__price-box
+                               p.card__price-only= priceBox.only
+                               p.card__price-value= priceBox.value
+                           button.btn.btn--white= btn
          
    footer.u-ct.u-mt-huge
        a.btn.btn--green(href= btn.url)= btn.label
-

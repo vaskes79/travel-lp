@@ -28,7 +28,8 @@
     transition: all 0.4s;
   }
 
-  &:hover {
+  &:hover, 
+  &:focus {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($c-black, 0.2);
     &::after {
@@ -83,13 +84,13 @@
   &:hover,
   &:focus {
     outline: none;
-    color: $c-primary-dark;
+    color: $c-white;
     border-bottom: 1px solid $c-primary-dark;
+    background-color: $c-primary-dark;
+    box-shadow: 0 1rem 2rem rgba($c-black, .15);
+    transform: translateY(-2px);
     &::after {
       margin-left: 1rem;
     }
-  }
-  &:focus {
-    background-color: $c-grey-dark;
   }
 }

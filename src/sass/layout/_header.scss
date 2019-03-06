@@ -8,6 +8,7 @@
       rgba($c-primary-dark, 0.8)
     ),
     url('../static/hero-small.jpg');
+  background-size: cover;
   @supports (clip-path: polygon(0 0)) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }

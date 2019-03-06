@@ -160,7 +160,7 @@
   },
   "book": {
     "heading": "Start booking now",
-    "btn": "Next step &rarr;",
+    "btn": "Next step",
     "inputs": [
       {
         "id": "name",
@@ -176,8 +176,8 @@
       }
     ],
     "radioGroup": [
-      {"label": "Smapll tour group"},
-      {"label": "Large tour group"}
+      {"label": "Smapll tour group", "id": "small"},
+      {"label": "Large tour group", "id": "large"}
     ]
   }
 }

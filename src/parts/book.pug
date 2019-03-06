@@ -1,0 +1,31 @@
+- const {book: {heading, inputs, radioGroup, btn}} = require('../data/home.json');
+- const btnLabel = `${btn} &rarr;`;
+
+section#book
+    .row
+        .boo
+            .book__form
+                form.form
+                    header.u-mb-medium
+                        h2.heading-2= heading
+
+                    each inputItem in inputs
+                        - let {id, placeholder, label, type} = inputItem
+
+                        .form__group
+                            input.form__input(type= type placeholder= placeholder id= id required)
+                            label.form__label(for= id)= label
+
+                    .form__group.u-mb-medium
+
+                        each radioItem in radioGroup
+                            - let {id, label} = radioItem;
+
+                            .form__radio-group
+                                input.form__radio-input(type='radio' id= id name='size')
+                                label.form__radio-label(for= id)
+                                    span.form__radio-button &nbsp; 
+                                    |#{label}
+
+                    footer.form__group
+                        button.btn.btn--green!= btnLabel

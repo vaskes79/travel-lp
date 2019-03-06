@@ -134,5 +134,28 @@
       "url": "#",
       "label": "Discover all tours"
     }
+  },
+  "stories": {
+    "heading": "We make people genuinely happy",
+    "items": [
+      {
+        "img": {
+          "url": "nat-8.jpg",
+          "alt": "some description"
+        },
+        "heading": "I had the best week ever with my family",
+        "name": "Mary Smith",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui."
+      },
+      {
+        "img": {
+          "url": "nat-9.jpg",
+          "alt": "some description"
+        },
+        "heading": "WOW! My life is completely different now",
+        "name": "Jack Wilson",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui."
+      }
+    ]
   }
 }

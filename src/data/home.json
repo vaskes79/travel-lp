@@ -81,5 +81,58 @@
       "heading": "live a healthier life",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
     }
-  ]
+  ],
+  "tours": {
+    "heading": "Most popular tours",
+    "cards": [
+      {
+        "heading": "The Sea Explorer",
+        "details": [
+          "3 day tours",
+          "Up to 30 people",
+          "2 tour guides",
+          "Sleep in cozy hotels",
+          "Difficulty: easy"
+        ],
+        "priceBox": {
+          "only": "Only",
+          "value": "$297"
+        },
+        "btn": "Book now!"
+      },
+      {
+        "heading": "The Forest Hiker",
+        "details": [
+          "7 day tours",
+          "Up to 40 people",
+          "6 tour guides",
+          "Sleep in provided tents",
+          "Difficulty: medium"
+        ],
+        "priceBox": {
+          "only": "Only",
+          "value": "$497"
+        },
+        "btn": "Book now!"
+      },
+      {
+        "heading": "The Snow Adventurer",
+        "details": [
+          "5 day tours",
+          "Up to 15 people",
+          "3 tour guides",
+          "Sleep in provided tents"
+        ],
+        "priceBox": {
+          "only": "Only",
+          "value": "$897"
+        },
+        "btn": "Book now!"
+      }
+    ],
+    "btn": {
+      "url": "#",
+      "label": "Discover all tours"
+    }
+  }
 }

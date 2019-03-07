@@ -25,7 +25,7 @@
     &:hover,
     &:focus {
       outline: none;
-      animation: swing .2s $easeInOutBack infinite;
+      animation: pulsate 1s infinite;
     }
   }
 

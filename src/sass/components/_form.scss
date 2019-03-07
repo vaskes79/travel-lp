@@ -75,7 +75,10 @@
     position: relative;
     display: inline-block;
     padding-left: 4rem;
+    cursor: pointer;
+    transition: all .2s;
   }
+
 
   &__radio-button {
     position: relative;
@@ -103,7 +106,10 @@
     }
   }
 
-  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+  &__radio-input:checked ~ &__radio-label  &__radio-button::after {
       opacity: 1;
+  }
+  &__radio-input:focus + &__radio-label {
+      color: $c-primary-dark;
   }
 }

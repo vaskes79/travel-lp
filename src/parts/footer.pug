@@ -1,0 +1,23 @@
+- const {footer: { heading, navigation, copyright } } = require('../data/home.json');
+- const img1x = require('../static/logo-green-1x.png') + ' 1x';
+- const img2x = require('../static/logo-green-2x.png')+ ' 2x';
+- const imgSmall1x = require('../static/logo-green-small-1x.png') + ' 1x';
+- const imgSmall2x = require('../static/logo-green-small-2x.png') + ' 2x';
+- const sources = [imgSmall1x, imgSmall2x].join(',');
+- const imgSrc = [img1x, img2x].join(',');
+
+footer#footer
+    .footer__logo-box
+        picture.footer__logo
+            source(srcset= sources media="(max-width: 37.5em)")
+            img(srcset= imgSrc alt="Full logo" src= img2x)
+    .row
+        .col-1-of-2
+            .footer__navigation
+                ul.footer__list
+                    each item in navigation.items
+                        - let {url, label} = item;
+                        li.footer__item
+                            a.footer__link(href= url target="_blank")= label
+        .col-1-of-2
+            p.footer__copyright!= copyright

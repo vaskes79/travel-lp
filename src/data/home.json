@@ -157,5 +157,27 @@
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui."
       }
     ]
+  },
+  "book": {
+    "heading": "Start booking now",
+    "btn": "Next step",
+    "inputs": [
+      {
+        "id": "name",
+        "label": "Full name",
+        "placeholder": "Full name",
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "Email address",
+        "placeholder": "Email address",
+        "type": "email"
+      }
+    ],
+    "radioGroup": [
+      {"label": "Smapll tour group", "id": "small"},
+      {"label": "Large tour group", "id": "large"}
+    ]
   }
 }

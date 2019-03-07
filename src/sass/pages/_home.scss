@@ -34,3 +34,25 @@
   position: relative;
   padding: 20rem 0 10rem 0;
 }
+
+
+#book {
+  position: relative;
+  background-image: linear-gradient(to right bottom, $c-primary-light, $c-primary-dark);
+  padding: 10rem 0;
+}
+
+.book {
+  background-image: linear-gradient(
+      to right,
+      rgba($c-white, 0.9) 0%,
+      rgba($c-white, 0.9) 100%
+    ),
+    url('../static/nat-10.jpg');
+  background-size: cover;
+  border-radius: 3px;
+
+  &__form {
+    padding: 6rem;
+  }
+}

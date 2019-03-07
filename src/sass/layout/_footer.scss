@@ -1,3 +1,62 @@
 .footer {
+  padding: 8rem 0;
+  background: $c-grey-dark-3;
+  text-align: center;
+  font-size: 1.6rem;
 
+  &__logo-box {
+    margin-bottom: 4rem;
+  }
+
+  &__navigation,
+  &__copyright {
+      padding-top: 2rem;
+    border-top: 1px solid $c-grey-dark;
+  }
+
+  ///////////////////////////////////////
+  // NAVIGATION BLOCK
+  &__navigation {
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  ///////////////////////////////////////
+  // COPYRIGHT BLOCK
+  &__copyright {
+    text-align: left;
+  }
+
+  ///////////////////////////////////////
+  // LINKS
+  &__link {
+      display: inline-block;
+      transition: all .2s;
+
+      &:link,
+      &:visited {
+        color: $c-white;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:focus {
+          outline: none;
+          backface-visibility: hidden;
+          color: $c-primary;
+          box-shadow: 0 1rem 3rem rgba($c-black, .5);
+          transform: scale(1.3) rotate(5deg);
+      }
+
+      &:not(last-child) {
+          margin-right: 1.6rem;
+      }
+  }
 }

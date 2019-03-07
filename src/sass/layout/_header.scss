@@ -14,9 +14,19 @@
   }
 
   &__logo {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      animation: swing .2s $easeInOutBack infinite;
+    }
   }
 
   &__logo-img {
@@ -31,3 +41,4 @@
     text-align: center;
   }
 }
+

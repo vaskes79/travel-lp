@@ -2,23 +2,23 @@
   "navigation": {
     "items": [
       {
-        "url": "https://vaskes79.github.io/landing-bp/",
-        "label": "aboute"
+        "url": "#about",
+        "label": "about"
       },
       {
-        "url": "https://vaskes79.github.io/landing-bp/",
+        "url": "#features",
         "label": "benefits"
       },
       {
-        "url": "https://vaskes79.github.io/landing-bp/",
+        "url": "#tours",
         "label": "popular tours"
       },
       {
-        "url": "https://vaskes79.github.io/landing-bp/",
+        "url": "#stories",
         "label": "stories"
       },
       {
-        "url": "https://vaskes79.github.io/landing-bp/",
+        "url": "#book",
         "label": "book now"
       }
     ]
@@ -32,7 +32,7 @@
       "url": "#tours"
     },
     "header__logo": {
-      "url": "https://vaskes79.github.io/landing-bp/",
+      "url": "/",
       "header__img": {
         "srcset": [
           "../static/logo-white.png",
@@ -57,7 +57,7 @@
     ],
     "btn": {
       "label": "Learn more",
-      "url": "https://github.com/vaskes79"
+      "url": "/"
     }
   },
   "features": [

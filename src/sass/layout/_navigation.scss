@@ -105,6 +105,12 @@
     transition: all 0.8s $lineEasOut;
   }
 
+  @media speech {
+      &__nav {
+          visibility: visible;
+      }
+  }
+
   ///////////////////////////////////////
   // NAV ACTIVE STATE
   &--active &__nav {

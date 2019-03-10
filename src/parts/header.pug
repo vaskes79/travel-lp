@@ -3,8 +3,8 @@
 - const logo = require('../static/logo-white.png')
 
 header.header
-    a.header__logo(href= header__logo.url)
-        img.header__logo-img(src= logo alt= header__img.alt)
+    a.header__logo(href= header__logo.url aria-hidden="true" tabindex="-1")
+        img.header__logo-img(src= logo alt= header__img.alt aria-hidden="true")
     .header__text-box 
         h1.heading= heading 
             span.heading__sub= heading__sub

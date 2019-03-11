@@ -64,7 +64,14 @@
   // RADIO BUTTON
 
   &__radio-group {
+      width: 100%;
     margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+        width: 49%;
+        display: inline-block;
+        text-align: left;
+    }
   }
 
   &__radio-input {

@@ -16,11 +16,20 @@
       rgba($c-primary-light, 0.8),
       rgba($c-primary-dark, 0.8)
     ),
-    url('../static/nat-4.jpg');
+    url('../static/nat-4-1x.jpg');
   background-size: cover;
 
   & > * {
     transform: skewY(7deg);
+  }
+
+  @include bg2x {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($c-primary-light, 0.8),
+        rgba($c-primary-dark, 0.8)
+      ),
+      url('../static/nat-4-2x.jpg');
   }
 }
 
@@ -33,6 +42,17 @@
 #stories {
   position: relative;
   padding: 20rem 0 10rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($c-white, 0.8),
+      rgba($c-white, 0.9)
+    ),
+    url('../static/bg-video-1x.jpg');
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: none;
+  }
 }
 
 #book {
@@ -55,7 +75,7 @@
       rgba($c-white, 0.9) 0%,
       rgba($c-white, 0.9) 100%
     ),
-    url('../static/nat-10.jpg');
+    url('../static/nat-10-1x.jpg');
 
   background-size: cover;
   border-radius: 3px;
@@ -71,7 +91,7 @@
         rgba($c-white, 0.9) 65%,
         transparent 65%
       ),
-      url('../static/nat-10.jpg');
+      url('../static/nat-10-2x.jpg');
   }
 
   &__form {

@@ -1,7 +1,7 @@
 - const {about: {heading, text, btn}} = require('../data/home.json');
-- const photo1 = require('../static/nat-1.jpg');
-- const photo2 = require('../static/nat-2.jpg');
-- const photo3 = require('../static/nat-3.jpg');
+- const photo1 = [ require('../static/nat-1.jpg') + ' 1x', require('../static/nat-1-large.jpg') + ' 2x' ].join(',');
+- const photo2 = [ require('../static/nat-2.jpg') + ' 1x', require('../static/nat-2-large.jpg') + ' 2x' ].join(',');
+- const photo3 = [ require('../static/nat-3.jpg') + ' 1x', require('../static/nat-2-large.jpg') + ' 2x' ].join(',');
         
 
 section#about
@@ -16,6 +16,6 @@ section#about
 
         .col-1-of-2
             .composition
-                img.composition__photo.composition__photo--p1(src= photo1 alt='nat 1')
-                img.composition__photo.composition__photo--p2(src= photo2 alt='nat 2')
-                img.composition__photo.composition__photo--p3(src= photo3 alt='nat 3')
+                img.composition__photo.composition__photo--p1(srcset= photo1 alt='nat 1')
+                img.composition__photo.composition__photo--p2(srcset= photo2 alt='nat 2')
+                img.composition__photo.composition__photo--p3(srcset= photo3 alt='nat 3')

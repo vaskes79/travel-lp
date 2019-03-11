@@ -1,4 +1,5 @@
 .bg-video {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -7,6 +8,10 @@
   z-index: -1;
   opacity: 0.15;
   overflow: hidden;
+
+  @include respond(tab-port) {
+      display: block;
+  }
 
   &__content {
     width: 100%;

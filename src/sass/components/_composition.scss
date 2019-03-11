@@ -16,7 +16,10 @@
     }
 
     &--p1 {
-      transform: scale(1.2);
+      transform: scale(0.8);
+      @include respond(tab-land) {
+        transform: scale(1.2);
+      }
     }
     &--p2 {
       top: -1rem;
@@ -25,7 +28,10 @@
     }
     &--p3 {
       top: 1rem;
-      transform: scale(1.2);
+      transform: scale(0.8);
+      @include respond(tab-land) {
+        transform: scale(1.2);
+      }
     }
   }
   &:hover &__photo:not(:hover) {

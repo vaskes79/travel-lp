@@ -1,5 +1,7 @@
 .composition {
   position: relative;
+  width: calc(100% - 3rem);
+
 
   &__photo {
     position: relative;

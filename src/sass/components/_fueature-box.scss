@@ -11,7 +11,11 @@
   overflow: hidden;
 
   @include respond(tab-land) {
-    height: 48rem;
+    min-height: 48rem;
+  }
+
+  @include respond(desctop) {
+    min-height: 33rem;
   }
 
   &__icon {

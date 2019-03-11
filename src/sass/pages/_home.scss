@@ -94,6 +94,16 @@
       url('../static/nat-10-2x.jpg');
   }
 
+  @include respond(desctop) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($c-white, 0.9) 0%,
+        rgba($c-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url('../static/nat-10-2x.jpg');
+  }
+
   &__form {
     @include respond(tab-land) {
       width: 65%;

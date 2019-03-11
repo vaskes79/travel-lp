@@ -6,11 +6,15 @@
   padding-left: 5rem;
 
   @include respond(tab-port) {
-    width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 6rem;
     padding-left: 9rem;
     transform: skewX(-12deg);
+  }
+
+  @include respond(desctop) {
+    max-width: 60%;
   }
 
   &__shape {
@@ -41,7 +45,6 @@
   }
 
   &__text {
-
     @include respond(tab-port) {
       transform: translateX(0) skewX(12deg);
     }

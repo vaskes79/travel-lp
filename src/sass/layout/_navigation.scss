@@ -19,6 +19,11 @@
     border-radius: 50%;
     background-image: radial-gradient($c-primary-light, $c-primary-dark);
     transition: transform 0.8s $lineEasOut;
+
+    @include respond(desctop) {
+      top: 5.5rem;
+      right: 5.5rem;
+    }
   }
 
   &--active::before {
@@ -44,6 +49,11 @@
     display: inline-block;
     &:focus {
       animation: pulsate 1s infinite;
+    }
+
+    @include respond(desctop) {
+      top: 5rem;
+      right: 5rem;
     }
   }
 
@@ -106,9 +116,9 @@
   }
 
   @media speech {
-      &__nav {
-          visibility: visible;
-      }
+    &__nav {
+      visibility: visible;
+    }
   }
 
   ///////////////////////////////////////

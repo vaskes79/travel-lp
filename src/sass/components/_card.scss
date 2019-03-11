@@ -162,6 +162,10 @@
         border-bottom: 1px solid $c-grey-light-2;
       }
     }
+
+    @include respond(tab-land) {
+        height: 280px;
+    }
   }
 
   ///////////////////////////////////////

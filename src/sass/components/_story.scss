@@ -5,6 +5,14 @@
   padding: 2rem;
   padding-left: 5rem;
 
+  @include respond(tab-port) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 6rem;
+    padding-left: 9rem;
+    transform: skewX(-12deg);
+  }
+
   &__shape {
     position: relative;
     float: left;
@@ -13,10 +21,15 @@
     transform: translateX(-3rem) skewX(0);
     overflow: hidden;
     border-radius: 50%;
+
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       clip-path: circle(50% at 50% 50%);
       shape-outside: circle(50% at 50% 50%);
       border-radius: none;
+    }
+
+    @include respond(tab-port) {
+      transform: translateX(-3rem) skewX(12deg);
     }
   }
 
@@ -24,33 +37,37 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   &__text {
+
+    @include respond(tab-port) {
+      transform: translateX(0) skewX(12deg);
+    }
   }
 
   &__caption {
-      position: absolute;
-      display: inline-block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 20%);
-      color: $c-white;
-      text-transform: uppercase;
-      text-align: center;
-      backface-visibility: hidden;
-      transition: all .5s;
-      opacity: 0;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $c-white;
+    text-transform: uppercase;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+    opacity: 0;
   }
 
   &:hover &__caption {
-      opacity: 1;
-      transform: translate(-50%, -50%);
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 
   &:hover &__img {
-      transform: translateX(-4rem) scale(1);
-      filter: blur(3px) brightness(80%);
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }

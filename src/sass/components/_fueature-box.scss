@@ -1,17 +1,25 @@
 .feature-box {
   max-width: 380px;
+  height: auto;
   margin: 0 auto;
   background-color: rgba($c-white, 0.8);
   border-radius: 3px;
   padding: 1.6rem;
+  padding-bottom: 1.6rem;
   text-align: center;
-  transition: transform .3s;
+  transition: transform 0.3s;
+  overflow: hidden;
+
+  @include respond(tab-land) {
+    height: 48rem;
+  }
 
   &__icon {
     font-size: 6rem;
     display: inline-block;
     display: inline-block;
     color: $c-primary-dark;
+
     @supports (-webkit-background-clip: text) or (background-clip: text) {
       background-image: linear-gradient(
         to right,
@@ -24,12 +32,16 @@
   }
 
   &__text {
-      font-size: 1.7rem;
-      color: rgba($c-grey-dark, .8);
-      line-height: 1.8;
+    display: block;
+    font-size: 1.7rem;
+    color: rgba($c-grey-dark, 0.8);
+    line-height: 1.8;
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
   }
 
   &:hover {
-      transform: translateY(-1.5rem) scale(1.04);
+    transform: translateY(-1.5rem) scale(1.04);
   }
 }

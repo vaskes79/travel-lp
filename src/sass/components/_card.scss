@@ -9,7 +9,6 @@
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba($c-black, 0.15);
-  
 
   ///////////////////////////////////////
   // SIDES
@@ -23,27 +22,27 @@
     &--back {
       color: $c-white;
       clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-      
+
       &-0 {
-          background-image: linear-gradient(
-            to right bottom,
-            rgba($c-secondary-light, 1),
-            rgba($c-secondary-dark, 1)
-          );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($c-secondary-light, 1),
+          rgba($c-secondary-dark, 1)
+        );
       }
       &-1 {
-          background-image: linear-gradient(
-            to right bottom,
-            rgba($c-primary-light, 1),
-            rgba($c-primary-dark, 1)
-          );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($c-primary-light, 1),
+          rgba($c-primary-dark, 1)
+        );
       }
       &-2 {
-          background-image: linear-gradient(
-            to right bottom,
-            rgba($c-tertiary-light, 1),
-            rgba($c-tertiary-dark, 1)
-          );
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($c-tertiary-light, 1),
+          rgba($c-tertiary-dark, 1)
+        );
       }
     }
   }
@@ -58,11 +57,19 @@
         rgba($c-secondary-light, 1),
         rgba($c-secondary-dark, 1)
       ),
-      url('../static/nat-5.jpg');
+      url('../static/nat-5-1x.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-blend-mode: screen;
     backface-visibility: hidden;
+    @include bg2x {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($c-secondary-light, 1),
+          rgba($c-secondary-dark, 1)
+        ),
+        url('../static/nat-5-2x.jpg');
+    }
 
     // modifiers
     &--0 {
@@ -71,7 +78,16 @@
           rgba($c-secondary-light, 1),
           rgba($c-secondary-dark, 1)
         ),
-        url('../static/nat-5.jpg');
+        url('../static/nat-5-1x.jpg');
+
+      @include bg2x {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($c-secondary-light, 1),
+            rgba($c-secondary-dark, 1)
+          ),
+          url('../static/nat-5-2x.jpg');
+      }
     }
 
     &--1 {
@@ -80,7 +96,15 @@
           rgba($c-primary-light, 1),
           rgba($c-primary-dark, 1)
         ),
-        url('../static/nat-6.jpg');
+        url('../static/nat-6-1x.jpg');
+      @include bg2x {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($c-primary-light, 1),
+            rgba($c-primary-dark, 1)
+          ),
+          url('../static/nat-6-2x.jpg');
+      }
     }
 
     &--2 {
@@ -89,7 +113,16 @@
           rgba($c-tertiary-light, 1),
           rgba($c-tertiary-dark, 1)
         ),
-        url('../static/nat-7.jpg');
+        url('../static/nat-7-1x.jpg');
+
+      @include bg2x {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($c-tertiary-light, 1),
+            rgba($c-tertiary-dark, 1)
+          ),
+          url('../static/nat-7-2x.jpg');
+      }
     }
   }
 
@@ -162,26 +195,29 @@
         border-bottom: 1px solid $c-grey-light-2;
       }
     }
+
+    @include respond(tab-land) {
+      height: 28rem;
+    }
   }
 
   ///////////////////////////////////////
   // CTA
   &__cta {
-      padding: 7rem 4rem 4rem 4rem;
+    padding: 7rem 4rem 4rem 4rem;
   }
 
   &__price-box {
-      margin-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   &__price-only {
-      font-size: 1.4rem;
-      text-transform: uppercase;
+    font-size: 1.4rem;
+    text-transform: uppercase;
   }
 
   &__price-value {
-      font-size: 4rem;
-      font-weight: 100;
+    font-size: 4rem;
+    font-weight: 100;
   }
-  
 }

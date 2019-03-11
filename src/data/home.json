@@ -81,7 +81,7 @@
       {
         "iconName": "heart",
         "heading": "live a healthier life",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
       }
     ]
   },
@@ -143,7 +143,7 @@
     "items": [
       {
         "img": {
-          "url": "nat-8.jpg",
+          "url": "nat-8",
           "alt": "some description"
         },
         "heading": "I had the best week ever with my family",
@@ -152,7 +152,7 @@
       },
       {
         "img": {
-          "url": "nat-9.jpg",
+          "url": "nat-9",
           "alt": "some description"
         },
         "heading": "WOW! My life is completely different now",

@@ -43,6 +43,8 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "gsap": "^2.1.2",
+    "scrollmagic": "^2.0.6"
   }
 }

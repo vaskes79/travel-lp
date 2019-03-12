@@ -1,3 +1,7 @@
+.no-fouc {
+  display: none;
+}
+
 .loader-wrap {
   position: fixed;
   top: 0;

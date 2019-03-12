@@ -23,19 +23,18 @@ module.exports = {
     open: true,
     contentBase: path.join(__dirname, 'src'),
   },
-  optimization: isDevelopment
-    ? {}
-    : {
-      minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
-    },
+  optimization: isDevelopment ? {} : { minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})], },
+  externals: {
+    TimeLineMax: 'TimeLineMax',
+    ScrollMagic: 'ScrollMagic',
+    Power2: 'TimeLine.Power2',
+  },
   module: {
-    rules: [
+    rules: [ 
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.pug$/,

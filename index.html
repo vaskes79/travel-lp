@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>My Landing boilerplate</title><link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&amp;subset=cyrillic" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script><link href="/travel-lp/css/28e314c0.main.css" rel="stylesheet"></head><body><style>.no-fouc {
+  display: none;
+}
+
+.loader-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #55c57a, #28b485);
+  z-index: 3000;
+  display: flex;
+  transition: opacity 0.3s ease, transform 0.5s ease 1.5s;
+}
+
+.loading .loader-wrap {
+  transition: opacity 0.3s ease, transform 0.5s ease 1.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loaded .loader-wrap {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.loader {
+  position: relative;
+  margin: auto;
+  color: #ff7730;
+  font-size: 1.5rem;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 50px;
+}
+.loader::before,
+.loader::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ff7730;
+  position: absolute;
+  animation: load 0.7s infinite alternate ease-in-out;
+}
+
+.loader:before {
+  top: 0;
+}
+
+.loader::after {
+  bottom: 0;
+}
+
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}</style><script>(() => {
+    document.documentElement.className = 'no-fouc';
+    // document.body.classList.add('loading');
+    window.addEventListener('DOMContentLoaded', () => {
+    })
+
+
+    window.addEventListener('load', () => {
+        document.documentElement.classList.remove('no-fouc');
+
+        // const loaderWrap = document.querySelector('.loader-wrap')
+        // document.body.classList.replace('loading', 'loaded');
+        // loaderWrap.parentNode.removeChild(loaderWrap);
+    })
+})()</script><div class="navigation"><button class="navigation__btn" aria-label="navigation button" autofocus><span class="navigation__icon" aria-hidden="true">&nbsp;</span></button><nav class="navigation__nav"><ul class="navigation__list"><li class="navigation__item"><a class="navigation__link" href="#about">about</a></li><li class="navigation__item"><a class="navigation__link" href="#features">benefits</a></li><li class="navigation__item"><a class="navigation__link" href="#tours">popular tours</a></li><li class="navigation__item"><a class="navigation__link" href="#stories">stories</a></li><li class="navigation__item"><a class="navigation__link" href="#book">book now</a></li></ul></nav></div><header class="header"><a class="header__logo" href="/" aria-hidden="true" tabindex="-1"><img class="header__logo-img" src="/travel-lp/static/23bf6f9c.logo-white.png" alt="the outdors logo" aria-hidden="true"></a><div class="header__text-box"><h1 class="heading">outdors<span class="heading__sub">is where life happens</span></h1><a class="btn btn--white btn--animated" href="#tours">discovery tours</a></div></header><main><section id="about"><header class="u-ct u-mb-big"><h2 class="heading-2">Exciting tours for adventurous people</h2></header><div class="row"><div class="col-1-of-2"><h3 class="heading-3 u-mb-small">You're going to fall in love with nature</h3><p class="paragraph">Gastropub trust fund try-hard, messenger bag cray artisan meditation everyday carry lo-fi. Leggings messenger bag bushwick authentic hella yuccie viral live-edge man braid banh mi pork belly scenester. DIY letterpress bitters, authentic lo-fi 3 wolf moon tacos humblebrag. Occupy keffiyeh fixie subway tile viral squid. Tacos kale chips edison bulb heirloom knausgaard iPhone. Ramps tote bag enamel pin, kombucha art party VHS affogato tofu lyft hella letterpress paleo helvetica. Vice lomo hashtag aesthetic yuccie tumblr DIY waistcoat helvetica deep v gastropub typewriter hexagon marfa.</p><h3 class="heading-3 u-mb-small">Live adventures like you never have before</h3><p class="paragraph">Gastropub trust fund try-hard, messenger bag cray artisan meditation everyday carry lo-fi. Leggings messenger bag bushwick authentic hella yuccie viral live-edge man braid banh mi pork belly scenester. DIY letterpress bitters, authentic lo-fi 3 wolf moon tacos humblebrag. Occupy keffiyeh fixie subway tile viral squid. Tacos kale chips edison bulb heirloom knausgaard iPhone. Ramps tote bag enamel pin, kombucha art party</p><a class="btn-text" href="/" target="_blank">Learn more</a></div><div class="col-1-of-2"><div class="composition"><img class="composition__photo composition__photo--p1" srcset="/travel-lp/static/a2102857.nat-1.jpg 1x,/travel-lp/static/d2cfb7fa.nat-1-large.jpg 2x" alt="nat 1"><img class="composition__photo composition__photo--p2" srcset="/travel-lp/static/69cb9e68.nat-2.jpg 1x,/travel-lp/static/ab35c697.nat-2-large.jpg 2x" alt="nat 2"><img class="composition__photo composition__photo--p3" srcset="/travel-lp/static/e75c0361.nat-3.jpg 1x,/travel-lp/static/ab35c697.nat-2-large.jpg 2x" alt="nat 3"></div></div></div></section><section id="features"><header class="u-vh"><h2>benefits</h2></header><div class="row"><div class="col-1-of-4"><div class="feature-box"><i class="feature-box__icon icon-basic-world" aria-hidden="true">&nbsp;</i><h3 class="heading-3 u-mb-small">explore the world</h3><p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p></div></div><div class="col-1-of-4"><div class="feature-box"><i class="feature-box__icon icon-basic-compass" aria-hidden="true">&nbsp;</i><h3 class="heading-3 u-mb-small">meet nature</h3><p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p></div></div><div class="col-1-of-4"><div class="feature-box"><i class="feature-box__icon icon-basic-map" aria-hidden="true">&nbsp;</i><h3 class="heading-3 u-mb-small">find your way</h3><p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p></div></div><div class="col-1-of-4"><div class="feature-box"><i class="feature-box__icon icon-basic-heart" aria-hidden="true">&nbsp;</i><h3 class="heading-3 u-mb-small">live a healthier life</h3><p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p></div></div></div></section><section id="tours"><header class="u-ct u-mb-big"><h2 class="heading-2">Most popular tours</h2></header><div class="row"><div class="col-1-of-3"><div class="card"><div class="card__side card__side--front"><div class="card__picture card__picture--0">&nbsp;</div><div class="card__heading"><span class="card__heading-span card__heading-span--0">The Sea Explorer</span></div><div class="card__details"><ul><li>3 day tours</li><li>Up to 30 people</li><li>2 tour guides</li><li>Sleep in cozy hotels</li><li>Difficulty: easy</li></ul></div></div><div class="card__side card__side--back card__side--back-0"><div class="card__cta"><div class="card__price-box"><p class="card__price-only">Only</p><p class="card__price-value">$297</p></div><button class="btn btn--white">Book now!</button></div></div></div></div><div class="col-1-of-3"><div class="card"><div class="card__side card__side--front"><div class="card__picture card__picture--1">&nbsp;</div><div class="card__heading"><span class="card__heading-span card__heading-span--1">The Forest Hiker</span></div><div class="card__details"><ul><li>7 day tours</li><li>Up to 40 people</li><li>6 tour guides</li><li>Sleep in provided tents</li><li>Difficulty: medium</li></ul></div></div><div class="card__side card__side--back card__side--back-1"><div class="card__cta"><div class="card__price-box"><p class="card__price-only">Only</p><p class="card__price-value">$497</p></div><button class="btn btn--white">Book now!</button></div></div></div></div><div class="col-1-of-3"><div class="card"><div class="card__side card__side--front"><div class="card__picture card__picture--2">&nbsp;</div><div class="card__heading"><span class="card__heading-span card__heading-span--2">The Snow Adventurer</span></div><div class="card__details"><ul><li>5 day tours</li><li>Up to 15 people</li><li>3 tour guides</li><li>Sleep in provided tents</li></ul></div></div><div class="card__side card__side--back card__side--back-2"><div class="card__cta"><div class="card__price-box"><p class="card__price-only">Only</p><p class="card__price-value">$897</p></div><button class="btn btn--white">Book now!</button></div></div></div></div></div><footer class="u-ct u-mt-huge"><a class="btn btn--green" href="#">Discover all tours</a></footer></section><section id="stories"><div class="bg-video"><video class="bg-video__content" autoplay muted loop poster="/travel-lp/static/3b7cae13.bg-video-1x.jpg"><source src="/travel-lp/static/video/ffcd876c.video.mp4" media="min-width: 600px" type="video/mp4"><source src="/travel-lp/static/video/f556a2c3.video.webm" media="min-width: 600px" type="video/webm"><you>browser is not supported tag video!</you></video></div><header class="u-ct u-mb-big"><h2 class="heading-2">We make people genuinely happy</h2></header><div class="row"><div class="story"><div class="figure story__shape"><img class="story__img" srcset="/travel-lp/static/6e583f8b.nat-8-1x.jpg 1x,/travel-lp/static/e4093a7a.nat-8-2x.jpg 2x" alt="some description"><figcaption class="story__caption">Mary Smith</figcaption></div><div class="story__text"><h3 class="heading-3 u-mb-small">I had the best week ever with my family</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p></div></div></div><div class="row"><div class="story"><div class="figure story__shape"><img class="story__img" srcset="/travel-lp/static/65d0e0f6.nat-9-1x.jpg 1x,/travel-lp/static/2b700357.nat-9-2x.jpg 2x" alt="some description"><figcaption class="story__caption">Jack Wilson</figcaption></div><div class="story__text"><h3 class="heading-3 u-mb-small">WOW! My life is completely different now</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p></div></div></div><footer class="u-ct u-mt-huge"><a class="btn-text" href="#">Read all Stories</a></footer></section><section id="book"><div class="row"><div class="book"><div class="book__form"><form class="form"><header class="u-mb-medium"><h2 class="heading-2">Start booking now</h2></header><div class="form__group"><input class="form__input" type="text" placeholder="Full name" id="name" required><label class="form__label" for="name">Full name</label></div><div class="form__group"><input class="form__input" type="email" placeholder="Email address" id="email" required><label class="form__label" for="email">Email address</label></div><div class="form__group u-mb-medium"><div class="form__radio-group"><input class="form__radio-input u-vh" type="radio" id="small" value="small" name="size"><label class="form__radio-label" for="small"><span class="form__radio-button">&nbsp; </span>Smapll tour group</label></div><div class="form__radio-group"><input class="form__radio-input u-vh" type="radio" id="large" value="large" name="size"><label class="form__radio-label" for="large"><span class="form__radio-button">&nbsp; </span>Large tour group</label></div></div><footer class="form__group"><button class="btn btn--green">Next step &rarr;</button></footer></form></div></div></div></section></main><footer class="footer" id="footer"><div class="footer__logo-box"><picture class="footer__logo"><source srcset="/travel-lp/static/97613998.logo-green-small-1x.png 1x,/travel-lp/static/11f77cca.logo-green-small-2x.png 2x" media="(max-width: 37.5em)"><img srcset="/travel-lp/static/d2e3db3a.logo-green-1x.png 1x,/travel-lp/static/b7aa3f40.logo-green-2x.png 2x" alt="Full logo" src="/travel-lp/static/b7aa3f40.logo-green-2x.png 2x"></picture></div><div class="row"><div class="col-1-of-2"><div class="footer__navigation"><ul class="footer__list"><li class="footer__item"><a class="footer__link" href="https://github.com/vaskes79" target="_blank">Company</a></li><li class="footer__item"><a class="footer__link" href="https://github.com/vaskes79" target="_blank">Contact us</a></li><li class="footer__item"><a class="footer__link" href="https://github.com/vaskes79" target="_blank">Careers</a></li><li class="footer__item"><a class="footer__link" href="https://github.com/vaskes79" target="_blank">Privacy policy</a></li><li class="footer__item"><a class="footer__link" href="https://github.com/vaskes79" target="_blank">Terms</a></li></ul></div></div><div class="col-1-of-2"><p class="footer__copyright">Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!</p></div></div></footer><script type="text/javascript" src="/travel-lp/3be1b3eb.bundle.js"></script></body></html>

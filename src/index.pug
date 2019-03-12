@@ -9,6 +9,10 @@ html(lang='en-US')
     //if lt IE 9
       script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
     link(href='https://fonts.googleapis.com/css?family=Roboto:100,400,700&subset=cyrillic', rel='stylesheet')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
   body
     include parts/preloader.pug
     include parts/navigation.pug
@@ -22,4 +26,3 @@ html(lang='en-US')
       include parts/book.pug
 
     include parts/footer.pug
-

@@ -48,7 +48,7 @@
     text-align: center;
     display: inline-block;
     &:focus {
-      animation: pulsate 1s infinite;
+      animation: pulsate 1s infinite 2s;
     }
 
     @include respond(desctop) {

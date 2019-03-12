@@ -1,11 +1,15 @@
 (() => {
-    document.body.classList.add('loading');
+    document.documentElement.className = 'no-fouc';
+    // document.body.classList.add('loading');
+    window.addEventListener('DOMContentLoaded', () => {
+    })
 
-    document.addEventListener("DOMContentLoaded", () => {
 
-        const loaderWrap = document.querySelector('.loader-wrap')
+    window.addEventListener('load', () => {
+        document.documentElement.classList.remove('no-fouc');
 
-        setTimeout(() => document.body.classList.replace('loading', 'loaded'), 2000);
-        setTimeout(() => loaderWrap.parentNode.removeChild(loaderWrap), 3000);
+        // const loaderWrap = document.querySelector('.loader-wrap')
+        // document.body.classList.replace('loading', 'loaded');
+        // loaderWrap.parentNode.removeChild(loaderWrap);
     })
 })()

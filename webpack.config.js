@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer');
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[contenthash:8].bundle.js',
@@ -26,10 +26,17 @@ module.exports = {
   optimization: isDevelopment
     ? {}
     : {
-        minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
-      },
+      minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
       {
         test: /\.pug$/,
         loader: 'pug-loader',

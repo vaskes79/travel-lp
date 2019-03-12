@@ -7,14 +7,18 @@
   "license": "MIT",
   "homepage": "https://vaskes79.github.io/travel-lp/",
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.config.js", 
+    "dev": "webpack-dev-server --config ./webpack.config.js",
     "clean": "rimrav public",
     "build": "NODE_ENV=production webpack --config ./webpack.config.js --mode=production",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d public"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "autoprefixer": "^9.4.9",
+    "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
     "css-loader": "^2.1.0",
     "eslint": "^5.15.0",
@@ -38,6 +42,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "gh-pages": "^2.0.1"
   }
 }

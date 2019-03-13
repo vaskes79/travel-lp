@@ -147,35 +147,17 @@ const animation = () => {
     clearProps: 'all',
   });
 
-  aboutScene
-    .setTween(aboutTL)
-    .addTo(ctrlScroll)
-    .addIndicators({});
+  aboutScene.setTween(aboutTL).addTo(ctrlScroll);
 
-  featuresScene
-    .setTween(featureTL)
-    .addTo(ctrlScroll)
-    .addIndicators({});
+  featuresScene.setTween(featureTL).addTo(ctrlScroll);
 
-  toursScene
-    .setTween(toursTL)
-    .addTo(ctrlScroll)
-    .addIndicators({});
+  toursScene.setTween(toursTL).addTo(ctrlScroll);
 
-  storiesScene
-    .setTween(storiesTL)
-    .addTo(ctrlScroll)
-    .addIndicators({});
+  storiesScene.setTween(storiesTL).addTo(ctrlScroll);
 
-  bookScene
-    .setTween(bookTL)
-    .addTo(ctrlScroll)
-    .addIndicators({});
+  bookScene.setTween(bookTL).addTo(ctrlScroll);
 
-  footerScene
-    .setTween(footerTL)
-    .addTo(ctrlScroll)
-    .addIndicators({});
+  footerScene.setTween(footerTL).addTo(ctrlScroll);
 
   setTimeout(() => headerTL.play(), 100);
 };

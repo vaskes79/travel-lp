@@ -6,6 +6,7 @@ body {
 }
 
 .heading {
+  position: relative;
   color: $c-white;
   text-transform: uppercase;
   // backface-visibility: hidden;
@@ -24,6 +25,7 @@ body {
 }
 
 .heading-2 {
+  position: relative;
   font-size: 2.6rem;
   text-transform: uppercase;
   display: inline-block;
@@ -39,22 +41,23 @@ body {
   );
   transition: all 0.2s $lineEasOut;
   &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($c-black, .2);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($c-black, 0.2);
   }
 }
 
 .heading-3 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
+  position: relative;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .paragraph {
-    font-size: 1.6rem;
+  position: relative;
+  font-size: 1.6rem;
 }
 
 .paragraph:not(:last-child) {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
-
